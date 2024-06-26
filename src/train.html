@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset='UTF-8' />
+  <!-- TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+</head>
+<body>
+<div id="console"></div>
+<video autoplay playsinline muted id="webcam" width="640" height="480" style="transform: scaleX(-1)"></video>
+<button id="class-a">ふつうのピース</button>
+<button id="class-b">顔ピース</button>
+<button id="class-c">指ハート</button>
+<button id="class-d">両手ハート</button>
+<button id="download">download</button>
+<script src='js/knn.js'></script>
+</body>
+</html>
