@@ -1,8 +1,12 @@
 let detector;
 let results;
+let knnResult;
+let classifier;
+let net;
 const decoLoadedImage = {}; // スタンプ画像を格納するオブジェクト
 const decoImageList = ['star', 'peace', 'heart01', 'heart02', 'heart03']; // スタンプ画像のリスト
 
+let webcam ;
 const webcamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
 const canvasWrapperElement = document.getElementById('canvasWrapper');
@@ -23,6 +27,7 @@ async function enableCam() {
 
     return new Promise((resolve) => {
       webcamElement.onloadedmetadata = () => {
+        console.log("video loaded");
         webcamElement.play();
         resolve();
       };
@@ -85,9 +90,63 @@ async function estimateHands() {
   results = await detector.estimateHands(webcamElement, estimationConfig);
 }
 
+// ポーズを検知する関数
+async function estimatePose() {
+  if (classifier.getNumClasses() > 0) {
+    const img = await webcam.capture();
+
+    const activation = net.infer(img, 'conv_preds');
+    const result = await classifier.predictClass(activation);
+
+    const classes = ['ふつうのピース', '顔ピース', '指ハート', '両手ハート'];
+    document.getElementById('console').innerText = `
+      prediction: ${classes[result.label]}\n
+      probability: ${result.confidences[result.label]}
+    `;
+
+    knnResult = classes[result.label];
+
+    img.dispose();
+  }
+
+  await tf.nextFrame();
+}
+
+async function setupKNN() {
+  classifier = knnClassifier.create();
+  net = await mobilenet.load();
+
+  webcam = await tf.data.webcam(webcamElement);
+
+  return new Promise((resolve) => {
+    resolve();
+  });
+}
+
+async function loadKNNModel() {
+  const response = await fetch('models/knn-classifier-model.txt');
+  const txt = await response.text();
+
+  // https://github.com/tensorflow/tfjs/issues/633
+  classifier.setClassifierDataset(
+    Object.fromEntries(
+      JSON.parse(txt).map(([label, data, shape]) => [
+        label,
+        tf.tensor(data, shape)
+      ])
+    )
+  );
+
+  return new Promise((resolve) => {
+    resolve();
+  });
+}
+
 // Canvasにスタンプ画像を描画する関数
 function drawCanvas() {
   if (!results || results.length === 0) return;
+
+
 
   results.forEach(result => {
     const { keypoints } = result;
@@ -103,15 +162,17 @@ function drawCanvas() {
     const pinkyFingerMcp = keypoints.find((keypoint) => keypoint.name === 'pinky_finger_mcp');
     const pinkyFingerTip = keypoints.find((keypoint) => keypoint.name === 'pinky_finger_tip');
 
+    console.log(knnResult);
 
-    if (knnResult === 'ふつうのピース') {
-      drawDecoImage({
-        image: decoLoadedImage.peace,
-        x: thumbMcp.x,
-        y: thumbMcp.y,
-        scale: 6,
-      });
-    }
+
+    // if (knnResult === 'ふつうのピース') {
+    //   drawDecoImage({
+    //     image: decoLoadedImage.peace,
+    //     x: thumbMcp.x,
+    //     y: thumbMcp.y,
+    //     scale: 6,
+    //   });
+    // }
   });
 }
 
@@ -145,6 +206,7 @@ function drawDecoImage({ image, x, y, scale = 1, xFix = 0, yFix = 0}) {
 
 // 毎フレーム走らせる処理
 function render() {
+  estimatePose(); // ポーズを検知する
   estimateHands(); // 手を検知する
   drawWebCamToCanvas(); // canvasにvideoを描画する
   drawCanvas(); // canvasにやりたいことを描画する
@@ -157,6 +219,8 @@ async function initHandPose() {
   loadDecoImages(); // スタンプ画像をロード
   await enableCam(); // Webカメラの起動
   await createHandDetector(); // 手検知モデルの初期化
+  await setupKNN(); // KNNモデルのセットアップ
+  await loadKNNModel(); // KNNモデルのロード
   initCanvas(); // Canvasの初期化
 
   render(); // 毎フレーム走らせる処理
