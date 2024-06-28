@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad95c663-a92c-48ed-8f5e-09c7b713a83d" name="変更" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index-Bp1JnYNB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index-ChqJh3bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index-DhS33y-G.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index-DwA47Goz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/face-detection/images/bear01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/face-detection/images/cat02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/face-detection/images/cat03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/face-detection/images/hige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/face-detection/images/rabbit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/face-detection/images/ribbon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/bear01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/cat02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/cat03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/heart01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/heart02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/heart03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/hige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/peace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/peace01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/rabbit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/ribbon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hand-pose/images/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bear01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cat01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cat02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cat03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/lip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/rabbit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/ribbon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/detect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/knn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/knn-classifier-model.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="pages" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2hjLa4yPKneUb75UG5soBBVf2N9" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev (1)">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/hand-pose-detection-keypoints3d/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="ad95c663-a92c-48ed-8f5e-09c7b713a83d" name="変更" comment="" />
+      <created>1718102599406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718102599406</updated>
+      <workItem from="1718102601260" duration="6108000" />
+      <workItem from="1718166200711" duration="714000" />
+      <workItem from="1718243307638" duration="7587000" />
+      <workItem from="1718256403481" duration="3029000" />
+      <workItem from="1718267274689" duration="1741000" />
+      <workItem from="1718343001751" duration="18793000" />
+      <workItem from="1718778020806" duration="112000" />
+      <workItem from="1718778329530" duration="1432000" />
+      <workItem from="1718861008429" duration="15856000" />
+      <workItem from="1719365665167" duration="9489000" />
+      <workItem from="1719474527823" duration="3755000" />
+      <workItem from="1719553796630" duration="8081000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
